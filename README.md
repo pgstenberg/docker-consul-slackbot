@@ -1,1 +1,8 @@
 #HELLO WORLD!
+
+Environment Variables:
+```
+SLACK_TEAM
+SLACK_TOKEN
+SLACK_CHANNEL
+```
