@@ -8,4 +8,4 @@ COPY slackbot.py /bin/watch-slackbot
 
 RUN pip install requests
 
-ENTRYPOINT ["consul","watch","-http-addr=192.168.1.150:8500","-type=service","-service=devservice","watch-slackbot"]
+ENTRYPOINT ["consul","watch","-http-addr=$CONSUL_ADDRESS","-type=$CONSUL_WATCH_TYPE","$CONSUL_OPTIONS","watch-slackbot"]
